@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    group:
+      dev:
+        - dev
+      production:
+        - production
+  main:
+    allow-bean-definition-overriding: true
+server:
+  servlet:
+    encoding:
+      enabled: true
+      charset: UTF-8

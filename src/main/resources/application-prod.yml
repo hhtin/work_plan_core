@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://tinhhtest:qt9uPZFtfkkYiI8o@project:qn3imu2:mongodb:net/prod?retryWrites=true&w=majority
+  jpa:
+    show-sql: true
