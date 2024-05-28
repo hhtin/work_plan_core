@@ -1,7 +1,6 @@
 package vn.tinhh.workplan.bases;
 
 import com.mongodb.client.result.UpdateResult;
-import jakarta.validation.constraints.NotEmpty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -10,6 +9,7 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.util.Assert;
 import vn.tinhh.workplan.manager.IdRenderManager;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.*;
 
 public class BaseManager<T> {
@@ -43,7 +43,7 @@ public class BaseManager<T> {
         return this.mongoTemplate.find(Query.query(Criteria.where("_id").in(ids)), this.tClass, this.collectionName);
     }
 
-    public T create(@NotEmpty T object,@NotEmpty String updateBy) {
+    public T create(@NotEmpty T object, @NotEmpty String updateBy) {
         if (object instanceof BaseModel) {
             BaseModel baseModel = (BaseModel) object;
             if (null == baseModel.getId()) {

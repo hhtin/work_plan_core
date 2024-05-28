@@ -1,12 +1,8 @@
 package vn.tinhh.workplan.utils;
 
-import jakarta.validation.constraints.NotNull;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
-import vn.tinhh.workplan.bases.BaseSort;
 import vn.tinhh.workplan.model.DateInRangeSearchRequest;
 
 import java.util.*;
