@@ -1,20 +1,19 @@
 package vn.tinhh.workplan.controllers.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import vn.tinhh.workplan.bases.BaseController;
-import vn.tinhh.workplan.controllers.IPartyController;
+import vn.tinhh.workplan.controllers.PartyController;
 import vn.tinhh.workplan.entities.Party;
 import vn.tinhh.workplan.manager.PartyManager;
 
 @Service
-public class PartyController extends BaseController implements IPartyController {
+public class PartyControllerImpl extends BaseController implements PartyController {
 
     private final PartyManager partyManager;
 
     @Autowired
-    public PartyController(PartyManager partyManager) {
+    public PartyControllerImpl(PartyManager partyManager) {
         this.partyManager = partyManager;
     }
 
