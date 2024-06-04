@@ -1,6 +1,6 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://tinhhtest:qt9uPZFtfkkYiI8o@project:qn3imu2:mongodb:net/prod?retryWrites=true&w=majority
+      uri: mongodb+srv://tinhhdev:TolKk2vmjfDBSWT4@workplan.fmhpjon.mongodb.net/prod?retryWrites=true&w=majority&appName=WorkPlan
   jpa:
     show-sql: true

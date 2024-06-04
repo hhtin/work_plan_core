@@ -1,0 +1,11 @@
+type Party{
+    partyGroupId: String
+    fullName: String
+    status: String
+    gentle: String
+    phone: String
+    email: String
+    address: String
+    dob: String
+    description:String
+}

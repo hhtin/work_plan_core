@@ -23,4 +23,9 @@ public class TypeEnum {
             this.code = code;
         }
     }
+
+    public enum PartyType{
+        ACTIVE,
+        INACTIVE
+    }
 }
