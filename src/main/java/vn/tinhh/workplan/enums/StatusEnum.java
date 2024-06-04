@@ -16,4 +16,10 @@ public class StatusEnum {
             return this.value;
         }
     }
+
+    public enum CommonStatus{
+        ACTIVE,
+        INACTIVE
+    }
+
 }

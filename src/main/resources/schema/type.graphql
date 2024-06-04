@@ -9,3 +9,19 @@ type Party{
     dob: String
     description:String
 }
+
+type PartyGroup{
+    name: String
+    type: String
+    shortName: String
+    description: String
+    status: String
+}
+
+type PartyLogin{
+    userName: String
+    password: String
+    preferenceId: String
+    preferenceType: String
+    status: String
+}

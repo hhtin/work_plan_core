@@ -7,6 +7,7 @@ import com.netflix.graphql.dgs.InputArgument;
 import org.springframework.beans.factory.annotation.Autowired;
 import vn.tinhh.workplan.controllers.PartyController;
 import vn.tinhh.workplan.entities.Party;
+import vn.tinhh.workplan.enums.StatusEnum;
 import vn.tinhh.workplan.enums.TypeEnum;
 
 import java.util.Date;
@@ -34,7 +35,7 @@ public class PartyResolver {
         return partyController.create(Party.builder()
                 .partyGroupId(partyGroupId)
                 .fullName(fullName)
-                .status(TypeEnum.PartyType.ACTIVE.name())
+                .status(StatusEnum.CommonStatus.ACTIVE.name())
                 .gentle(gentle)
                 .phone(phone)
                 .email(email)
